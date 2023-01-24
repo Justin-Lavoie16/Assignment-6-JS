@@ -18,7 +18,7 @@ const getbear = async (URLAddress) => {
     document.getElementById("api-image").innerHTML =
       '<img src="' +
       jsonData.url +
-      '" alt="bear image" class="center" width="200% height ="300%" ' +
+      '" alt="bear image" class="center" width="40% height ="40%" ' +
       ">";
   } catch (err) {
     console.log(err);
