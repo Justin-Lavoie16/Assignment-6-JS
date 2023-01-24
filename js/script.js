@@ -8,20 +8,20 @@ if (navigator.serviceWorker) {
   })
 }
 
-"use strict"
+;("use strict")
 
 const getbear = async (URLAddress) => {
   try {
-    const request = await fetch(URLAddress);
-    const jsonData = await request.json();
-    console.log(jsonData.url);
+    const request = await fetch(URLAddress)
+    const jsonData = await request.json()
+    console.log(jsonData.url)
     document.getElementById("api-image").innerHTML =
       '<img src="' +
       jsonData.url +
       '" alt="bear image" class="center" width="40% height ="40%" ' +
-      ">";
+      ">"
   } catch (err) {
-    console.log(err);
+    console.log(err)
   }
-};
-getbear("https://random.dog/woof.json");
+}
+getbear("https://random.dog/woof.json")
